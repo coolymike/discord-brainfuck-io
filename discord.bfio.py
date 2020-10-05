@@ -14,6 +14,8 @@ import json
 # If there's anything that needs more thought, consider
 # creating an issue or pull request.
 
+# Pointer **starts at 30k**
+
 # Mem layout:
 # 0-~27k blank
 # 50 len, 29950-30k flags
@@ -22,6 +24,7 @@ import json
 # 100 len, 29706-29806 message channel name
 # 100 len, 29606-29706 message guild name
 # 2000 len, 27606-29606 message content
+# 30000 len, 30k-60k free space
 
 messages = []
 bfmem = [0 for _ in range(60000)]
